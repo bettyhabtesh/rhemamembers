@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen;
+}
+
+
+@layer base {
+  :root {
+    --background: 244 246 249; /* #F4F6F9 */
+    --foreground: 44 62 80; /* #2C3E50 */
+    --card: 255 255 255; /* #FFFFFF */
+    --card-foreground: 44 62 80; /* #2C3E50 */
+    --popover: 255 255 255; /* #FFFFFF */
+    --popover-foreground: 44 62 80; /* #2C3E50 */
+    --primary: 44 62 80; /* #2C3E50 */
+    --primary-foreground: 255 255 255; /* #FFFFFF */
+    --secondary: 52 73 94; /* #34495E */
+    --secondary-foreground: 255 255 255; /* #FFFFFF */
+    --muted: 244 246 249; /* #F4F6F9 */
+    --muted-foreground: 127 140 141; /* #7F8C8D */
+    --accent: 26 188 156; /* #1ABC9C */
+    --accent-foreground: 255 255 255; /* #FFFFFF */
+    --destructive: 231 76 60; /* #E74C3C */
+    --destructive-foreground: 255 255 255; /* #FFFFFF */
+    --border: 229 231 235; /* #E5E7EB */
+    --input: 229 231 235; /* #E5E7EB */
+    --ring: 26 188 156; /* #1ABC9C */
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 52 73 94; /* #34495E */
+    --foreground: 255 255 255; /* #FFFFFF */
+    --card: 44 62 80; /* #2C3E50 */
+    --card-foreground: 255 255 255; /* #FFFFFF */
+    --popover: 44 62 80; /* #2C3E50 */
+    --popover-foreground: 255 255 255; /* #FFFFFF */
+    --primary: 26 188 156; /* #1ABC9C */
+    --primary-foreground: 44 62 80; /* #2C3E50 */
+    --secondary: 62 88 112; /* #3E5870 */
+    --secondary-foreground: 255 255 255; /* #FFFFFF */
+    --muted: 62 88 112; /* #3E5870 */
+    --muted-foreground: 127 140 141; /* #7F8C8D */
+    --accent: 26 188 156; /* #1ABC9C */
+    --accent-foreground: 44 62 80; /* #2C3E50 */
+    --destructive: 231 76 60; /* #E74C3C */
+    --destructive-foreground: 255 255 255; /* #FFFFFF */
+    --border: 62 88 112; /* #3E5870 */
+    --input: 62 88 112; /* #3E5870 */
+    --ring: 26 188 156; /* #1ABC9C */ --sidebar-background: 240 5.9% 10%; --sidebar-foreground: 240 4.8% 95.9%; --sidebar-primary: 224.3 76.3% 48%; --sidebar-primary-foreground: 0 0% 100%; --sidebar-accent: 240 3.7% 15.9%; --sidebar-accent-foreground: 240 4.8% 95.9%; --sidebar-border: 240 3.7% 15.9%; --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

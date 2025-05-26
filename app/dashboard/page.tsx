@@ -191,7 +191,7 @@ export default async function Dashboard() {
           <CardContent>
             <div className="grid gap-4 md:grid-cols-3">
               <Button asChild className="bg-[#2C3E50] hover:bg-[#3E5870] text-white">
-                <Link href="/members/add">
+                <Link href="/dashboard/members/add">
                   <UserPlus className="w-4 h-4 mr-2" />
                   Add New Member
                 </Link>

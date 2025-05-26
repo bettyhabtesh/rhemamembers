@@ -29,7 +29,7 @@ export default function LoginPage() {
       // Simulate successful login
       localStorage.setItem("isAuthenticated", "true")
       localStorage.setItem("userEmail", email)
-      router.push("/")
+      router.push("/dashboard")
       return
     }
 
@@ -38,7 +38,7 @@ export default function LoginPage() {
       if (error) {
         setError("Invalid email or password")
       } else {
-        router.push("/")
+        router.push("/dashboard")
       }
     } catch (err) {
       setError("An error occurred during login")

@@ -20,22 +20,22 @@ import { Button } from "@/components/ui/button"
 const menuItems = [
   {
     title: "Dashboard",
-    url: "/",
+    url: "/dashboard",
     icon: Home,
   },
   {
     title: "Members",
-    url: "/members",
+    url: "/dashboard/members",
     icon: Users,
   },
   {
     title: "Add Member",
-    url: "/members/add",
+    url: "/dashboard/members/add",
     icon: UserPlus,
   },
   {
     title: "Analytics",
-    url: "/analytics",
+    url: "/dashboard/analytics",
     icon: BarChart3,
   },
 ]

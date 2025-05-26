@@ -117,7 +117,7 @@ export default function AddMemberPage() {
         <SidebarTrigger className="-ml-1" />
         <Separator orientation="vertical" className="mr-2 h-4" />
         <Button variant="ghost" size="sm" asChild>
-          <Link href="/members">
+          <Link href="/dashboard/members">
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Members
           </Link>
@@ -253,10 +253,10 @@ export default function AddMemberPage() {
                   Education Level
                 </Label>
                 <Select name="education_level">
-                  <SelectTrigger className="border-gray-300 bg-white focus:border-[#1ABC9C] focus:ring-[#1ABC9C]">
-                    <SelectValue placeholder="Select education level" />
+                  <SelectTrigger className="border-gray-300 bg-white focus:border-[#1ABC9C] focus:ring-[#1ABC9C]  text-gray-700 hover:text-black hover:selection:to-black">
+                    <SelectValue className="text-black" placeholder="Select education level" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white text-gray-700 hover:text-black hover:selection:to-black">
                     <SelectItem value="Not Educated">Not Educated</SelectItem>
                     <SelectItem value="Primary Level">Primary Level</SelectItem>
                     <SelectItem value="Secondary Level">Secondary Level</SelectItem>
@@ -287,7 +287,7 @@ export default function AddMemberPage() {
                   <SelectTrigger className="border-gray-300 bg-white focus:border-[#1ABC9C] focus:ring-[#1ABC9C]">
                     <SelectValue placeholder="Select employment type" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white text-gray-700 hover:text-black hover:selection:to-black">
                     <SelectItem value="Merchant">Merchant</SelectItem>
                     <SelectItem value="Unemployed">Unemployed</SelectItem>
                     <SelectItem value="Private Sector">Private Sector</SelectItem>
@@ -385,7 +385,7 @@ export default function AddMemberPage() {
                   <SelectTrigger className="border-gray-300 bg-white focus:border-[#1ABC9C] focus:ring-[#1ABC9C]">
                     <SelectValue placeholder="Select marital status" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-white text-gray-700 hover:text-black hover:selection:to-black">
                     <SelectItem value="Single">Single</SelectItem>
                     <SelectItem value="Married">Married</SelectItem>
                     <SelectItem value="Separated">Separated (without court decision)</SelectItem>
@@ -452,7 +452,7 @@ export default function AddMemberPage() {
                           <SelectTrigger className="border-gray-300 bg-white focus:border-[#1ABC9C] focus:ring-[#1ABC9C]">
                             <SelectValue placeholder="Select gender" />
                           </SelectTrigger>
-                          <SelectContent>
+                          <SelectContent className="bg-white text-gray-700 hover:text-black hover:selection:to-black" >
                             <SelectItem value="Male">Male</SelectItem>
                             <SelectItem value="Female">Female</SelectItem>
                           </SelectContent>

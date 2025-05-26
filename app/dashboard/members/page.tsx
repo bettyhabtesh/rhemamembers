@@ -105,7 +105,7 @@ export default function MembersPage() {
         <h1 className="text-xl font-semibold text-[#2C3E50]">Members</h1>
         <div className="ml-auto">
           <Button asChild className="bg-[#2C3E50] hover:bg-[#3E5870] text-white">
-            <Link href="/members/add">
+            <Link href="/dashboard/members/add">
               <Plus className="w-4 h-4 mr-2" />
               Add Member
             </Link>

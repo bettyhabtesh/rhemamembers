@@ -63,7 +63,7 @@ export default function LoginPage() {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="email" className="text-[#2C3E50] font-medium">
+              <Label htmlFor="email" className="text-black font-medium bg-white">
                 Email
               </Label>
               <Input
@@ -77,7 +77,7 @@ export default function LoginPage() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password" className="text-[#2C3E50] font-medium">
+              <Label htmlFor="password" className="text-black font-medium bg-white">
                 Password
               </Label>
               <Input
@@ -110,11 +110,6 @@ export default function LoginPage() {
               )}
             </Button>
           </form>
-          <div className="mt-6 p-4 bg-[#F4F6F9] rounded-lg border border-[#1ABC9C]/20">
-            <p className="text-sm text-[#2C3E50] font-medium">Demo Credentials:</p>
-            <p className="text-xs text-[#7F8C8D]">Email: bettynuriye@gmail.com</p>
-            <p className="text-xs text-[#7F8C8D]">Password: bettyinrhemafaith</p>
-          </div>
         </CardContent>
       </Card>
     </div>
